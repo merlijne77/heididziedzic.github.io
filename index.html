@@ -1,35 +1,188 @@
-<style>
-.github-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #24292f; /* GitHub donkergrijs */
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="4hjwnOirgLVdq_q5MO0pD72HFLN1QoO66spvQTnBso8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heidi's Dev Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
 
-.github-btn:hover {
-    background-color: #444c56; /* iets lichtere hover kleur */
-}
-</style>
+    body {
+      background-color: #f9fafb;
+      color: #222;
+      line-height: 1.6;
+    }
 
+    header {
+      background: linear-gradient(135deg, #00c9a7, #92fe9d);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
-<html>
-  <head>
-    <meta name="google-site-verification" content="4hjwnOirgLVdq_q5MO0pD72HFLN1QoO66spvQTnBso8" />
-    <title>Heidi Dziedzic - Enthusiastic Hobby Dev</title>
-  </head>
-  <body>
-    <h1>Heidi Dziedzic - Enthusiastic Hobby Dev</h1>
-    <p>This website is under construcion...</p>
-    <p>Meanwhile... check out my portfolio!</p>
-    <!-- GitHub profiel knop -->
-    <a href="https://github.com/merlijne77" target="_blank" class="github-btn">Mijn GitHub profiel</a>
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
 
- </body>
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    main {
+      padding: 2rem 10%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      border-left: 6px solid #00c9a7;
+      padding-left: 10px;
+      color: #333;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: #00a78e;
+      font-size: 1.6rem;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #00c9a7;
+      color: white;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      margin-top: 4rem;
+    }
+
+    .social-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 0.6rem;
+      font-size: 1.2rem;
+      transition: opacity 0.3s;
+    }
+
+    .social-links a:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      main {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Heidi — Hobby Developer</h1>
+    <p>Creating meaningful tools with Python and Streamlit</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Heidi, a hobby developer passionate about building helpful and inclusive
+        software. I love exploring Python and using code to make daily life a little easier —
+        especially for people who benefit from structure and predictability.
+      </p>
+    </section>
+
+    <section>
+      <h2>Project</h2>
+      <div class="project-card">
+        <img src="https://placehold.co/800x400?text=Social+Scripts+Library" alt="Social Scripts Library project" />
+        <h3>Social Scripts Library</h3>
+        <p>
+          The <strong>Social Scripts Library</strong> is a collection of digital scripts
+          designed to make everyday situations more predictable for people with autism
+          or a mental disability.  
+          <br><br>
+          Built entirely with <strong>pure Python</strong> and hosted on <strong>Streamlit</strong>,
+          it offers easy-to-follow social stories that explain what someone can expect
+          in specific situations — for example:
+          <em>“Voting,” “Going to the dentist,” or “Taking public transport.”</em>
+          <br><br>
+          The webapp is currently in development and is <strong>planned for November 2025</strong>.
+          <br><br>
+          I'm always looking to expand the library with new real-world scenarios.
+          If you’d like to contribute an idea for a situation to make more predictable,
+          feel free to email me!
+        </p>
+        <p style="margin-top: 1rem;">
+          📧 <a href="mailto:coding.aspie@gmail.com" style="color:#00a78e; text-decoration:none;">coding.aspie@gmail.com</a>
+        </p>
+        <p style="margin-top: 0.5rem;">
+          🌐 <a href="#" style="color:#00a78e; text-decoration:none;">View Project on Streamlit (coming soon)</a>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        You can find me on GitHub or reach out by email if you’d like to collaborate
+        or share ideas for new social scripts.
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/merlijne77" target="_blank">🐙 GitHub</a>
+        <a href="mailto:coding.aspie@gmail.com">✉️ Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Heidi — Made with ❤️ and Python</p>
+  </footer>
+</body>
 </html>
-
-
-
